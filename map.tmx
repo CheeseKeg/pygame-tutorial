@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="32" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tiles" tilewidth="32" tileheight="32">
+  <image source="images/tileset.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="triggers" tilewidth="32" tileheight="32">
+  <image source="images/triggers.png" width="96" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="player" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="enemy" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="reverse" value="yes"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="blockers" width="32" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztlm0LABAMhOf//2lfpWGruTvlSsnksRdaM7NGHix9Pjc/Kv6Pc2RNq/jPetM3/Y+cjYj/joHMv8dSqT8WF82feSj+iuPdx7N7sdqtnbhR+22p8Fl3UPE/sg/BZ/8HaGX51b1itleo1mvxR/Crc5zlI6XCZ44OfckA3g==
+  </data>
+ </layer>
+ <objectgroup color="#e34f4a" name="triggers" width="32" height="32" visible="0" opacity="0.61">
+  <object name="blocker" x="128" y="896" width="288" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="32" y="992" width="960" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object gid="3" x="64" y="960"/>
+  <object name="blocker" x="32" y="0" width="960" height="32">
+   <properties>
+    <property name="blockers" value="b"/>
+   </properties>
+  </object>
+  <object name="blocker" x="992" y="32" width="32" height="960">
+   <properties>
+    <property name="blockers" value="l"/>
+   </properties>
+  </object>
+  <object name="blocker" x="0" y="32" width="32" height="960">
+   <properties>
+    <property name="blockers" value="r"/>
+   </properties>
+  </object>
+  <object name="blocker" x="352" y="768" width="288" height="32">
+   <properties>
+    <property name="blockers" value="tl"/>
+   </properties>
+  </object>
+  <object name="blocker" x="288" y="672" width="32" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="96" y="704" width="64" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="96" y="512" width="32" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="224" y="512" width="160" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="448" y="512" width="96" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="608" y="512" width="64" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="32" y="608" width="32" height="32">
+   <properties>
+    <property name="blockers" value="tr"/>
+   </properties>
+  </object>
+  <object name="blocker" x="928" y="416" width="64" height="32">
+   <properties>
+    <property name="blockers" value="tl"/>
+   </properties>
+  </object>
+  <object name="blocker" x="832" y="352" width="64" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="768" y="320" width="64" height="32">
+   <properties>
+    <property name="blockers" value="tr"/>
+   </properties>
+  </object>
+  <object name="blocker" x="704" y="288" width="64" height="32">
+   <properties>
+    <property name="blockers" value="tr"/>
+   </properties>
+  </object>
+  <object name="t" x="32" y="256" width="672" height="32">
+   <properties>
+    <property name="blockers" value="rt"/>
+   </properties>
+  </object>
+  <object name="blocker" x="64" y="192" width="640" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="32" y="128" width="256" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="864" y="448" width="64" height="32">
+   <properties>
+    <property name="blockers" value="tl"/>
+   </properties>
+  </object>
+  <object name="blocker" x="800" y="480" width="64" height="32">
+   <properties>
+    <property name="blockers" value="tl"/>
+   </properties>
+  </object>
+  <object name="blocker" x="736" y="512" width="64" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object name="blocker" x="320" y="800" width="32" height="32">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object gid="4" x="544" y="768"/>
+  <object gid="4" x="160" y="896"/>
+  <object gid="5" x="416" y="896"/>
+  <object gid="5" x="96" y="896"/>
+  <object gid="5" x="320" y="768"/>
+  <object gid="5" x="640" y="768"/>
+  <object gid="4" x="544" y="192"/>
+  <object gid="5" x="704" y="192"/>
+  <object gid="5" x="32" y="192"/>
+  <object gid="4" x="480" y="192"/>
+  <object gid="4" x="672" y="192"/>
+  <object gid="4" x="288" y="512"/>
+  <object gid="5" x="384" y="512"/>
+  <object gid="5" x="192" y="512"/>
+  <object gid="4" x="864" y="992"/>
+  <object gid="5" x="992" y="992"/>
+  <object gid="5" x="640" y="992"/>
+  <object gid="5" x="0" y="992"/>
+  <object gid="4" x="576" y="992"/>
+ </objectgroup>
+</map>
